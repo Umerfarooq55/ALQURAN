@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:id="@+id/relative">
+
+
+    <com.example.arcmenu.lib.RayMenu
+        android:id="@+id/ray_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+
+        />
+    <Spinner
+        android:id="@+id/healthy_spinner"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+
+       android:layout_marginLeft="300dp"
+
+        android:background="@drawable/ic_more_vert_black_24dp" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Marshmallow"
+        android:layout_below="@+id/ray_menu"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black" />
+
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="5dp"
+        android:text="Android 6.0"
+        android:textColor="@android:color/black" />
+
+
+
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen1"
+    android:orientation="vertical">
+    <!--tools:context="com.umerfarooq.AlQuran.">-->
+    >
+    <!--tools:context="info.androidhive.materialtabs.fragments.OneFragment">-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="@color/overallbackground">
+    <Button
+        android:id="@+id/surah"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:background="@drawable/button_slector"
+
+        android:paddingTop="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:text="Sura"
+        android:elevation="6dp"
+        android:textAllCaps="false"
+        android:textColor="@color/textcolor"/>
+    <Button
+        android:id="@+id/subfragmenttwo"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:paddingTop="0dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/textcolor"
+        android:text="Page"
+        android:textAllCaps="false"
+        android:elevation="6dp"
+        android:background="@drawable/button_two_selector"/>
+    <Button
+        android:id="@+id/subfragmentthree"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:paddingTop="0dp"
+        android:layout_marginTop="10dp"
+        android:elevation="6dp"
+        android:textColor="@color/textcolor"
+        android:text="Juz"
+        android:textAllCaps="false"
+        android:background="@drawable/button_three_selector"/>
+    <Button
+        android:id="@+id/subfragmentfour"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:paddingTop="0dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/textcolor"
+        android:text="Hizb"
+        android:textAllCaps="false"
+        android:elevation="6dp"
+        android:background="@drawable/button_four_selector"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/overallbackground"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue Reading Al -Faihah 1:1"
+            android:textSize="18dp"
+            android:textColor="@color/textcolor"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="7dp"/>
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:id="@+id/oneee">
+
+    </FrameLayout>
+
+</LinearLayout>

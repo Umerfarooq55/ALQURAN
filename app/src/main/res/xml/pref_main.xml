@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <PreferenceCategory android:title="Appeaance">
+        <EditTextPreference
+
+            android:key="@string/key_gallery_name"
+            android:summary="English"
+            android:title="Language" />
+        <EditTextPreference
+
+            android:key="@string/key_gallery_name"
+            android:summary="Brown"
+            android:title="Theme" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_upload_over_wifi"
+            android:title="Show Translation" />
+     <PreferenceScreen
+
+            android:summary="[en_sahih]"
+            android:title="Translations">
+        <intent android:action="com.umerfarooq.AlQuran.Translation.ChooseTranslation"/>
+     </PreferenceScreen>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_upload_over_wifi"
+            android:title="Show Tafsir in Tafsir View only" />
+        <SeekBarPreference
+            android:key="keyName"
+            android:title="Translation"
+            android:summary="Summary."
+            android:max="5"
+            android:defaultValue="3" />
+
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Arabic">
+
+        <EditTextPreference
+
+            android:key="@string/key_gallery_name"
+            android:summary="Qalam"
+            android:title="Arabic Font" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_upload_over_wifi"
+            android:title="Word By Word Language" />
+        <EditTextPreference
+
+            android:key="English"
+            android:summary="Qalam"
+            android:title="Word by Word Language" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_upload_over_wifi"
+            android:title="Tajweed" />
+        <EditTextPreference
+
+            android:key="@string/key_gallery_name"
+            android:summary="indoPak/Asian(Beta)"
+            android:title="Mushaf Type" />
+        <SeekBarPreference
+            android:key="keyName"
+            android:title="Arabic"
+            android:summary="Summary."
+            android:max="5"
+            android:defaultValue="3" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Other">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_upload_over_wifi"
+            android:title="Right to Left View mode" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_upload_over_wifi"
+            android:title="Keep Screen On" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_upload_over_wifi"
+            android:title="Daily Notification"/>
+        <EditTextPreference
+
+            android:key="@string/key_gallery_name"
+
+            android:title="Clear Search History" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Data System">
+
+        <PreferenceScreen
+
+            android:key="@string/key_gallery_name"
+            android:summary="Manage and Download Quranic Recitations"
+            android:title="Audio Manager" >
+        <intent android:action="com.umerfarooq.AlQuran.Translation.audiomanager"/>
+        </PreferenceScreen>
+        <EditTextPreference
+
+            android:key="@string/key_gallery_name"
+            android:summary="Qalam"
+            android:title="Quran data Directory" />
+
+
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Tutorial">
+
+    <EditTextPreference
+
+        android:key="@string/key_gallery_name"
+        android:summary="Check out the Tutorial"
+        android:title="Tutorial" />
+    <EditTextPreference
+
+        android:key="@string/key_gallery_name"
+        android:summary="Stops Signs, Tajweed Pronouciation rules"
+        android:title="Tajweed Rules" />
+    </PreferenceCategory>
+</PreferenceScreen>

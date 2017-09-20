@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="dimension|reference" name="childSize"/>
+    <attr format="float|reference" name="fromDegrees"/>
+    <attr format="float|reference" name="toDegrees"/>
+    <color name="black">#000000</color>
+    <color name="lightblack">#323232</color>
+    <color name="transparent">#29000000</color>
+    <color name="white">#ffffff</color>
+    <declare-styleable name="ArcLayout"><attr name="fromDegrees"/><attr name="toDegrees"/><attr name="childSize"/></declare-styleable>
+    <declare-styleable name="ArcMenu"><attr name="fromDegrees"/><attr name="toDegrees"/><attr name="childSize"/></declare-styleable>
+    <declare-styleable name="RayLayout"><attr format="dimension" name="leftHolderWidth"/></declare-styleable>
+    <dimen name="menuChildSize">30dp</dimen>
+    <item format="float" name="menuFromDegrees" type="dimen">180.0</item>
+    <item format="float" name="menuToDegrees" type="dimen">360.0</item>
+    <string name="app_name">ArcMenu</string>
+</resources>

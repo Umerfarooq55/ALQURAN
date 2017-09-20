@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#795548</color>
+    <color name="colorPrimaryDark">#5E342E</color>
+    <color name="colorAccent">#009688</color>
+    <color name="navigation">#ffffff</color>
+    <color name="textcolor">#009688</color>
+    <color name="backgroundsplash">#39873C</color>
+    <color name="overallbackground">#F7EED5</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#608961</color>
+    <color name="bg_screen2">#55d2c2</color>
+    <color name="bg_screen3">#645c5c</color>
+    <color name="bg_screen4">#765d54</color>
+    <color name="splash">#39873C</color>
+   
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#ffffff</color>
+    <color name="dot_dark_screen2">#ffffff</color>
+    <color name="dot_dark_screen3">#ffffff</color>
+    <color name="dot_dark_screen4">#ffffff</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#ffffff</color>
+    <color name="dot_light_screen2">#ffffff</color>
+    <color name="dot_light_screen3">#ffffff</color>
+    <color name="dot_light_screen4">#ffffff</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+
+    <!--  Swipable tabs -->
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+
+    <color name="transgreay">#A1645c5c</color>
+
+</resources>

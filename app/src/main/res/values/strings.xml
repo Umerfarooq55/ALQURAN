@@ -1,0 +1,154 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Al Quran</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <!-- Intro Slides-->
+
+
+    <string name="slide_1_title">Al Quran</string>
+    <string name="slide_1_desc">Several downloadable recitations for verse by verse recital (supports gapless/continuous recitation) including Mishary Al-Afasy, Husari (muallim)!</string>
+    <string name="slide_2_title">Easy</string>
+    <string name="slide_2_desc">Color coded Tajweed, Audio,Auto Scroll and more</string>
+    <string name="slide_3_title">Get to the roots</string>
+    <string name="slide_3_desc">Detail word analysis upon clicking on words and ability to search</string>
+    <string name="slide_4_title">Be cosy</string>
+    <string name="slide_4_desc">Change themes fonts and pinch zoom to change text size</string>
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <!-- Navigation -->
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="qutation"> "Say,[ P Muhammad],"I only invoke</string>
+    <string name="qutationtwo">my Lord and do not associate with Him</string>
+    <string name="quationthree">anyone""</string>
+    <string name="quationfour">الجن  72:20 "</string>
+    <string name="action_settings">Settings</string>
+    <string name="urdu_open_in">آیات پر جائیں</string>
+    <string name="urdu_dua">قران مجید کی دعا</string>
+    <string name="Urdu_seting">ترتیبات</string>
+    <string name="Urdu_Dollar">مدد کریں</string>
+    <string name="Urdu_application">ایپلیکیشن بانٹئے</string>
+    <string name="Urdu_greentech">گرین ٹیک کے بارے میں</string>
+
+    <!-- Navigation English -->
+    <string name="open_in">Jump to verse</string>
+    <string name="dua">Dua</string>
+    <string name="seting">Settings</string>
+    <string name="Dollar">Contribute</string>
+    <string name="application">Share App</string>
+    <string name="greentech">About Green Tech </string>
+    <string name="Facebook">Facebook </string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="category_quran">Quran</string>
+    <string name="category_ayat">Ayat </string>
+    <string name="category_hadees">Hadees</string>
+    <string name="category_tafseer">Tafseer</string>
+    <string name="firstayat">بسم الله الرحمن الرحيم </string>
+
+
+    <!-- All Download Strings-->
+
+    <string name="download_Pdf">Download MP3</string>
+    <string name="download_Doc">Download MP3</string>
+    <string name="download_zip">Download Mp3</string>
+    <string name="download_video">Download Mp3</string>
+    <string name="download_mp3">Download MP3</string>
+    <string name="openFolder">Open DownloadedFolder</string>
+    <string name="downloadStarted">Download Started…</string>
+    <string name="downloadCompleted">Download Completed…</string>
+    <string name="downloadFailed">Download Failed…</string>
+    <string name="downloadAgain">Download Again</string>
+    <string name="font_fontFamily_medium">sans-serif</string>
+    <string name="Main2Activity">        AL Quran(Tafsir and by Word)</string>
+
+
+    <!-- Setting Strings -->
+
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="default_gallery_storage"> </string>
+    <string name="title_auto_upload">Auto upload</string>
+    <string name="summary_upload_over_wifi">Upload the videos when wifi is available</string>
+    <string name="title_upload_quality">Upload Quality</string>
+    <string name="summary_upload_video_quality">Specify video quality for uploads</string>
+    <string name="pref_title_notifications">Notifications</string>
+    <string name="summary_choose_ringtone">Choose notification sound</string>
+    <string name="pref_header_about">About</string>
+    <string name="summary_about">We are a team of like-minded people, specialized in development of Android App Development creating new trends across the app space. Glad to Help in anyway!</string>
+    <string name="app_version">3.5</string>
+    <string name="summary_support">Got any queries? We are happy to help!</string>
+    <string name="title_send_feedback">Send Feedback</string>
+    <string name="title_faq">FAQ</string>
+    <string name="summary_faq">View frequently asked questions</string>
+    <string name="url_faq">https://www.androidhive.info/privacy-policy/</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="url_privacy">https://www.androidhive.info/privacy-policy/</string>
+    <string name="title_terms">Terms &amp; Conditions</string>
+    <string name="url_terms">https://www.androidhive.info/terms-of-service/</string>
+    <string name="title_version">Version</string>
+    <string name="choose_email_client">Choose email client</string>
+    <string name="title_gallery_storage">Default Storage</string>
+    <string name="title_new_notification_sound">New message notification</string>
+    <string name="title_vibrate">Vibrate</string>
+    <string name="summary_vibrate">Vibrate on new notification</string>
+    <string name="key_upload_over_wifi">key_upload_over_wifi</string>
+    <string name="key_gallery_name">key_gallery_name</string>
+    <string name="key_upload_quality">key_upload_quality</string>
+    <string name="notifications_new_message">notifications_new_message</string>
+    <string name="key_notifications_new_message_ringtone">key_notifications_new_message_ringtone</string>
+    <string name="key_vibrate">key_vibrate</string>
+    <string name="key_send_feedback">key_send_feedback</string>
+    <string name="title_activity_sura_popup">Sura_popupActivity</string>
+
+
+    <string name="text_outside_circle_button_example">Text Outside Circle Button Example</string>
+
+
+
+
+
+    <string name="title_crossfade">Simple Crossfade</string>
+    <string name="title_card_flip">Card Flip</string>
+    <string name="title_screen_slide">Screen Slide</string>
+    <string name="title_zoom">Zoom</string>
+    <string name="title_layout_changes">Layout Changes</string>
+    <string name="title_template_step">Step <xliff:g id="step_number">%1$d</xliff:g>: Lorem
+        Ipsum</string>
+
+    <!-- Actions -->
+    <string name="action_toggle">Toggle indicator</string>
+    <string name="action_add_item">Add item</string>
+    <string name="action_remove_item">Remove item</string>
+    <string name="action_previous">Previous</string>
+    <string name="action_next">Next</string>
+    <string name="action_finish">Finish</string>
+    <string name="action_info">Photo info</string>
+    <string name="action_photo">View photo</string>
+
+    <!-- Messages -->
+    <string name="message_empty_layout_changes">Add an item above to get started.</string>
+    <string name="message_zoom_touch_expand">Touch a photo to expand it.</string>
+
+    <!-- Accessibility-only descriptions -->
+    <string name="description_image_1">Image 1</string>
+    <string name="description_image_2">Image 2</string>
+    <string name="description_zoom_touch_close">Expanded image (touch to close)</string>
+
+    <!-- Other strings -->
+    <string name="card_back_title">Angry Red Android</string>
+    <string name="card_back_description"><![CDATA[Lorem ipsum dolor sit]]></string>
+    <string name="lorem_ipsum"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et magna ut erat elementum cursus in quis ipsum. Nam faucibus ultrices eros, vel tempor leo semper sit amet. Duis magna quam, congue vitae interdum nec, condimentum ut lectus. Sed commodo venenatis eros a dignissim. Nunc adipiscing turpis nec magna venenatis at ultricies ipsum bibendum. Sed volutpat urna quis nisi vulputate egestas. Etiam eu dui a enim lacinia dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nPhasellus orci mi, eleifend nec congue id, volutpat at neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer semper velit vel leo rutrum sed fermentum elit porta.]]></string>
+
+</resources>

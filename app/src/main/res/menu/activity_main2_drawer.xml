@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/overallbackground" >
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_open_in_new_black_24dp"
+            android:title="@string/open_in" />
+        <item
+            android:id="@+id/dua"
+            android:icon="@drawable/ic_chat_bubble_outline_black_24dp"
+            android:title="@string/dua"/>
+    </group>
+    <group android:checkableBehavior="single">
+    <!--<item-->
+            <!--android:id="@+id/nav_slideshow"-->
+            <!--android:icon="@drawable/ic_menu_slideshow"-->
+            <!--android:title="Slideshow" />-->
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
+        <item
+        android:id="@+id/Setting"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/seting" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/Share_app"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/application" />
+            <item
+                android:id="@+id/Contribute"
+                android:icon="@drawable/ic_monetization_on_black_24dp"
+                android:title="@string/Dollar" />
+            <item
+                android:id="@+id/Facebook"
+                android:icon="@drawable/ic_monetization_on_black_24dp"
+                android:title="@string/Facebook" />
+        </menu>
+    </item>
+
+</menu>

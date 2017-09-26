@@ -1,24 +1,20 @@
 package com.umerfarooq.AlQuran.ListView;
 
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
-
 import android.support.v4.app.FragmentActivity;
-import android.app.FragmentManager;
 import android.support.v4.app.NavUtils;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Pair;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.animation.Animation;
-import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.nightonke.boommenu.BoomMenuButton;
 import com.umerfarooq.AlQuran.WelcomeActivity;
 
 import java.io.BufferedReader;
@@ -33,11 +29,9 @@ import info.androidhive.introslider.R;
 
 public class SuraTranslationEnglish extends FragmentActivity {
     ArrayList<DataModel> dataModels;
-    ListView listView;
+  public ListView listView;
     private static CustomAdapter adapter;
-    static final int[] ITEM_DRAWABLES = {R.drawable.facebook,
-            R.drawable.facebook, R.drawable.facebook, R.drawable.facebook,
-            R.drawable.facebook};
+
     //Button btn;
 //    RayMenu rayMenu;
     ////
@@ -47,7 +41,7 @@ public class SuraTranslationEnglish extends FragmentActivity {
     int mBaseDist;
     float mBaseRatio;
     float fontsize = 13;
-    private BoomMenuButton bmb;
+
     private ArrayList<Pair> piecesAndButtons = new ArrayList<>();
 //           private ActivityMainBinding binding;
     private Animation fabOpenAnimation;
@@ -115,12 +109,7 @@ private static final int NUM_PAGES = 5;
 
         adapter = new CustomAdapter(dataModels, getApplicationContext());
         listView.setAdapter(adapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//
-            }
-        });
+
 
 
     }

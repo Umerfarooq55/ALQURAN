@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.umerfarooq.AlQuran.ListView.ScreenSlideActivity;
 import com.umerfarooq.AlQuran.ListView.Sura;
@@ -83,9 +82,9 @@ listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 //                    .setAction("No action", null).show();
 String num=dataModel.getmSuraNumber();
 int num1= Integer.parseInt(num);
-            if(num1 <= 7) {
+            if(num1 <=1) {
                 Intent i = new Intent(getActivity(), ScreenSlideActivity.class);
-               i.putExtra("number", dataModel.getmSuraNumber());
+              // i.putExtra("number", dataModel.getmSuraNumber());
                 startActivity(i);
 //                Fragment fragment = new ScreenSlidePageFragment();
 //                FragmentManager fragmentManager = getSupportFragmentManager();
@@ -93,7 +92,7 @@ int num1= Integer.parseInt(num);
             }
             else
             {
-                Toast.makeText(getActivity(), "This will be Added Later", Toast.LENGTH_SHORT).show();
+                //     Toast.makeText(getActivity(), "This will be Added Later", Toast.LENGTH_SHORT).show();
 
             }
         }

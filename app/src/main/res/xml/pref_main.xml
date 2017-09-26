@@ -117,13 +117,8 @@
     </PreferenceCategory>
     <PreferenceCategory android:title="Tutorial">
 
-    <EditTextPreference
 
-        android:key="@string/key_gallery_name"
-        android:summary="Check out the Tutorial"
-        android:title="Tutorial" />
-    <EditTextPreference
-
+        <EditTextPreference
         android:key="@string/key_gallery_name"
         android:summary="Stops Signs, Tajweed Pronouciation rules"
         android:title="Tajweed Rules" />

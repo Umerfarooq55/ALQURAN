@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/content"
@@ -7,7 +6,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
     <RelativeLayout
-        android:id="@+id/text"
+        android:id="@+id/new1"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_marginTop="50dp"
@@ -16,17 +15,17 @@
     android:id="@+id/textpageno"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="50"
-
+    android:text="@string/_50"
     android:layout_marginTop="05dp"
     android:textSize="14sp"
     android:layout_marginLeft="170dp"
-    android:textColor="@color/black"/>
+    android:textColor="@color/navigationBarColor"/>
 
     </RelativeLayout>
     <ListView
+
         android:id="@+id/list"
-        android:layout_below="@+id/text"
+        android:layout_below="@+id/new1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="0dp"

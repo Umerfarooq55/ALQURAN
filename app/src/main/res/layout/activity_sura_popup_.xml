@@ -13,7 +13,7 @@
         android:layout_marginLeft="29dp"
         android:layout_marginTop="16dp"
         android:autoText="false"
-        android:text="Al-Muddaththir 74:22:1"
+        android:text="@string/al_muddaththir_74_22_1"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -23,7 +23,7 @@
         android:id="@+id/textView2"
         android:layout_width="141dp"
         android:layout_height="164dp"
-        android:text="TextView"
+        android:text="@string/textview"
         android:textSize="50dp"
         tools:layout_editor_absoluteX="113dp"
         tools:layout_editor_absoluteY="63dp" />

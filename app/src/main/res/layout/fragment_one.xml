@@ -21,7 +21,7 @@
         android:paddingTop="0dp"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="40dp"
-        android:text="Sura"
+        android:text="@string/sura"
         android:elevation="6dp"
         android:textAllCaps="false"
         android:textColor="@color/textcolor"/>
@@ -32,7 +32,7 @@
         android:paddingTop="0dp"
         android:layout_marginTop="10dp"
         android:textColor="@color/textcolor"
-        android:text="Page"
+        android:text="@string/page"
         android:textAllCaps="false"
         android:elevation="6dp"
         android:background="@drawable/button_two_selector"/>
@@ -44,7 +44,7 @@
         android:layout_marginTop="10dp"
         android:elevation="6dp"
         android:textColor="@color/textcolor"
-        android:text="Juz"
+        android:text="@string/juz"
         android:textAllCaps="false"
         android:background="@drawable/button_three_selector"/>
     <Button
@@ -54,7 +54,7 @@
         android:paddingTop="0dp"
         android:layout_marginTop="10dp"
         android:textColor="@color/textcolor"
-        android:text="Hizb"
+        android:text="@string/hizb"
         android:textAllCaps="false"
         android:elevation="6dp"
         android:background="@drawable/button_four_selector"/>
@@ -67,7 +67,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Continue Reading Al -Faihah 1:1"
+            android:text="@string/continue_reading_al_faihah_1_1"
             android:textSize="18dp"
             android:textColor="@color/textcolor"
             android:layout_marginLeft="55dp"

@@ -7,7 +7,6 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,7 +46,7 @@ public class OneFragment extends Fragment {
             public void onClick(View v) {
                 // We normally won't show the welcome slider again in real app
                 // but this is for testing
-                Toast.makeText(getContext(), "Helloo", Toast.LENGTH_LONG).show();
+                //     //    Toast.makeText(getContext(), "Helloo", Toast.LENGTH_LONG).show();
 //                    OnesubFragment onsub = new OnesubFragment();
 
                 OnesubFragment fragment1 = new OnesubFragment();
@@ -65,7 +64,7 @@ public class OneFragment extends Fragment {
             public void onClick(View v) {
                 // We normally won't show the welcome slider again in real app
                 // but this is for testing
-                Toast.makeText(getContext(), "Helloo", Toast.LENGTH_LONG).show();
+                 //    Toast.makeText(getContext(), "Helloo", Toast.LENGTH_LONG).show();
 //                    OnesubFragment onsub = new OnesubFragment();
 
                 TwosubFragment fragment2 = new TwosubFragment();
@@ -83,7 +82,7 @@ public class OneFragment extends Fragment {
             public void onClick(View v) {
                 // We normally won't show the welcome slider again in real app
                 // but this is for testing
-                Toast.makeText(getContext(), "Helloo", Toast.LENGTH_LONG).show();
+                 //    Toast.makeText(getContext(), "Helloo", Toast.LENGTH_LONG).show();
 //                    OnesubFragment onsub = new OnesubFragment();
 
               ThreesubFragment fragment3 = new ThreesubFragment();
@@ -101,7 +100,7 @@ public class OneFragment extends Fragment {
             public void onClick(View v) {
                 // We normally won't show the welcome slider again in real app
                 // but this is for testing
-                Toast.makeText(getContext(), "Helloo", Toast.LENGTH_LONG).show();
+                 //    Toast.makeText(getContext(), "Helloo", Toast.LENGTH_LONG).show();
 //                    OnesubFragment onsub = new OnesubFragment();
 
                 FoursubFragment fragment4 = new FoursubFragment();

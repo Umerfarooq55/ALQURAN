@@ -16,13 +16,11 @@
     </string-array>
 
     <string-array name="planets_array">
-        <item>Mercury</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
+        <item>Tafsir/Note View</item>
+        <item>Add Bookmark</item>
+        <item>Copy</item>
+        <item>Share</item>
+        <item>Play this Ayah</item>
+
     </string-array>
 </resources>

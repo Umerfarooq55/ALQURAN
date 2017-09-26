@@ -5,15 +5,11 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
-
-import com.example.arcmenu.lib.RayMenu;
 
 import java.util.ArrayList;
 
@@ -21,11 +17,7 @@ import info.androidhive.introslider.R;
 
 
 
-
-/**
- * Created by anupamchugh on 09/02/16.
- */
-public class CustomAdapter extends ArrayAdapter<DataModel> implements View.OnClickListener,View.OnTouchListener{
+public class CustomAdapter extends ArrayAdapter<DataModel> implements View.OnClickListener,View.OnTouchListener,AdapterView.OnItemSelectedListener{
 
     private ArrayList<DataModel> dataSet;
     Context mContext;
@@ -39,20 +31,30 @@ public class CustomAdapter extends ArrayAdapter<DataModel> implements View.OnCli
     // View lookup cache
     TextView t;
 
-    static final int[] ITEM_DRAWABLES = { R.drawable.facebook,
-            R.drawable.facebook, R.drawable.facebook, R.drawable.facebook,
-            R.drawable.facebook };
+    static final int[] ITEM_DRAWABLES = { R.drawable.icon_layer,
+            R.drawable.icon_bookmark, R.drawable.icon_copycontent, R.drawable.icon_play};
 
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
+    }
 
 
     private static class ViewHolder {
-        RayMenu rayMenu;
+
         TextView txtName;
         TextView txtType;
         TextView txtVersion;
-        ImageView info;
+        TextView info;
         RelativeLayout rl;
         Spinner mSpinner;
+        RelativeLayout fr;
 
         protected Dataholder data;
     }
@@ -113,45 +115,25 @@ public class CustomAdapter extends ArrayAdapter<DataModel> implements View.OnCli
             convertView = inflater.inflate(R.layout.row_item, parent, false);
             viewHolder.txtName = (TextView) convertView.findViewById(R.id.name);
             viewHolder.txtType = (TextView) convertView.findViewById(R.id.type);
-           // viewHolder.txtVersion = (TextView) convertView.findViewById(R.id.version_number);
-          //  viewHolder.info = (ImageView) convertView.findViewById(R.id.item_info);
-            viewHolder.rayMenu = (RayMenu)convertView. findViewById(R.id.ray_menu);
-            viewHolder.rl=(RelativeLayout)convertView.findViewById(R.id.relative);
+            viewHolder.txtVersion = (TextView) convertView.findViewById(R.id.t3);
+           viewHolder.info = (TextView) convertView.findViewById(R.id.t4);
+
+            //viewHolder.rl=(RelativeLayout)convertView.findViewById(R.id.relative);
             viewHolder.mSpinner=(Spinner) convertView.findViewById(R.id.healthy_spinner);
 
-            final int itemCount = ITEM_DRAWABLES.length;
 
-            for (int ib = 0; ib < itemCount; ib++) {
-                ImageView item = new ImageView(mContext);
-                item.setImageResource(ITEM_DRAWABLES[ib]);
+            ZoomLayout myZoomView = new ZoomLayout(mContext);
 
-                final int positionr = ib;
-                viewHolder. rayMenu.addItem(item, new View.OnClickListener() {
+            viewHolder.fr = (RelativeLayout) convertView.findViewById(R.id.relative);
+            viewHolder.fr.addView(myZoomView);
 
-                    @Override
-                    public void onClick(View v) {
-                        if (positionr == 0) {
-
-                        } else if (positionr == 1) {
-
-                        } else if (positionr == 2) {
-
-                        } else if (positionr == 3) {
-
-                        } else {
-
-                        }
-                    }
-                });
-
-            }
-viewHolder.rl.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-       viewHolder.rayMenu.setRotation(0);
-viewHolder.rayMenu.set();
-    }
-});
+//viewHolder.rl.setOnClickListener(new View.OnClickListener() {
+//    @Override
+//    public void onClick(View v) {
+//       viewHolder.rayMenu.setRotation(0);
+//viewHolder.rayMenu.set();
+//    }
+//});
             result=convertView;
 
             convertView.setTag(viewHolder);
@@ -160,18 +142,40 @@ viewHolder.rayMenu.set();
             result=convertView;
         }
 
-        Animation animation = AnimationUtils.loadAnimation(mContext, (position > lastPosition) ? R.anim.up_from_bottom : R.anim.down_from_top);
-        result.startAnimation(animation);
+//        Animation animation = AnimationUtils.loadAnimation(mContext, (position > lastPosition) ? R.anim.up_from_bottom : R.anim.down_from_top);
+//        result.startAnimation(animation);
         lastPosition = position;
         viewHolder.data = new Dataholder(mContext);
         viewHolder.mSpinner = (Spinner) convertView.findViewById(R.id.healthy_spinner);
       viewHolder.mSpinner.setAdapter(viewHolder.data.getAdapter());
+        viewHolder.mSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+              //  Toast.makeText(mContext, "Slected", Toast.LENGTH_SHORT).show();
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 ///
-t=viewHolder.txtName;
+//        int as=dataModel.getType().length();
+//        Spannable text = new SpannableString(dataModel.getType().toString());
+//
+//
+//        text.setSpan(new ForegroundColorSpan(Color.RED),0,as,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+//
+//
+//
+
+
+        t=viewHolder.txtName;
         viewHolder.txtName.setText(dataModel.getName());
+//        viewHolder.txtName.setText(text);
         viewHolder.txtType.setText(dataModel.getType());
-       // viewHolder.txtVersion.setText(dataModel.getVersion_number());
-     //   viewHolder.info.setOnClickListener(this);
+        viewHolder.txtVersion.setText(dataModel.getVersion_number());
+
+       viewHolder.info.setText(dataModel.getFeature());
     //    viewHolder.info.setTag(position);
         // Return the completed view to render on screen
         return convertView;

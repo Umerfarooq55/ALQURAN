@@ -17,7 +17,7 @@
         android:layout_alignParentTop="true"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Type here"
+        android:hint="@string/type_here"
         android:layout_toLeftOf="@+id/button"
         android:layout_toStartOf="@+id/button" />
 
@@ -25,7 +25,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Search"
+        android:text="@string/search"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />

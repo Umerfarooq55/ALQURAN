@@ -39,17 +39,41 @@
             android:id="@+id/nextnavigation"
             android:layout_width="120dp"
             android:layout_height="50dp"
-            android:text="next"
             android:layout_marginLeft="130dp"
-            android:layout_marginTop="350dp"
+            android:layout_marginTop="150dp"
+            android:text="next"
             />
         <Button
             android:id="@+id/start_again"
             android:layout_width="120dp"
             android:layout_height="50dp"
-            android:text="@string/start_again"
             android:layout_marginLeft="130dp"
             android:layout_marginTop="20dp"
+            android:text="@string/start_again" />
+
+        <Button
+            android:id="@+id/urdu"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="20dp"
+            android:text="urdu" />
+
+        <Button
+            android:id="@+id/german"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="20dp"
+            android:text="german" />
+
+        <Button
+            android:id="@+id/bangali"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="20dp"
+            android:text="bangali"
             />
 
     </LinearLayout>

@@ -4,32 +4,32 @@
     android:background="@color/overallbackground" >
     <item android:id="@+id/search"
         android:icon="@drawable/ic_search_white_24dp"
-       android:title="search"
+        android:title="@string/search"
         app:showAsAction="ifRoom"/>
     <item android:id="@+id/book"
         android:icon="@drawable/ic_search_white_24dp"
-        android:title="book"
+        android:title="@string/book"
         app:showAsAction="ifRoom"/>
     <item android:id="@+id/viewas_page"
         android:icon="@drawable/ic_search_white_24dp"
-        android:title="View Page no"/>
+        android:title="@string/view_page_no" />
 
 
     <item android:id="@+id/viewas_hizb"
         android:icon="@drawable/ic_search_white_24dp"
-        android:title="View as Hizb"/>
+        android:title="@string/View_as_hizb" />
 
     <item android:id="@+id/viewas_juz"
         android:icon="@drawable/ic_search_white_24dp"
-        android:title="View as Juz"/>
+        android:title="@string/View_as_Juz" />
 
     <item android:id="@+id/viewas_tajweed"
         android:icon="@drawable/ic_search_white_24dp"
-        android:title="Tajweed"/>
+        android:title="@string/tajweed" />
 
     <item android:id="@+id/setting"
         android:icon="@drawable/ic_search_white_24dp"
-        android:title="Setting"/>
+        android:title="@string/seting" />
 
 
 
